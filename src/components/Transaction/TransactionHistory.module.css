@@ -1,0 +1,30 @@
+.transactionHistory {
+  width: 500px;
+  margin: auto;
+  padding-top: 30px;
+  border-spacing: 0;
+}
+
+.transactionHistoryHead {
+  height: 50px;
+  background-color: rgb(89, 155, 89);
+}
+
+.transactionHistoryHeadItem {
+  border: 2px solid rgb(50, 87, 50);
+}
+.transactionHistoryHeadItem:not(:last-child) {
+  border-right: 0;
+}
+.transactionHistoryBlock {
+  background-color: rgb(201, 231, 201);
+  height: 50px;
+}
+.transactionHistoryItem {
+  text-align: center;
+  border-left: 2px solid rgb(50, 87, 50);
+  border-bottom: 2px solid rgb(50, 87, 50);
+}
+.transactionHistoryItem:last-child {
+  border-right: 2px solid rgb(50, 87, 50);
+}
