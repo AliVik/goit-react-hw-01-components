@@ -18,7 +18,7 @@ export default function App() {
         stats={user.stats}
       />
 
-      <Statistics key={data.id} title={data.title} stats={data} />
+      <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </>
