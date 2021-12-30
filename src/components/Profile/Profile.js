@@ -1,13 +1,7 @@
 import PropTypes from "prop-types";
 import css from "./Profile.module.css";
 
-export default function Profile({
-  username,
-  tag,
-  location,
-  avatar = "https://as2.ftcdn.net/v2/jpg/03/08/68/19/1000_F_308681935_VSuCNvhuif2A8JknPiocgGR2Ag7D1ZqN.jpg",
-  stats,
-}) {
+export default function Profile({ username, tag, location, avatar, stats }) {
   return (
     <div className={css.profile}>
       <div className={css.description}>
@@ -34,6 +28,11 @@ export default function Profile({
     </div>
   );
 }
+
+Profile.defaultProps = {
+  avatar:
+    "https://as2.ftcdn.net/v2/jpg/03/08/68/19/1000_F_308681935_VSuCNvhuif2A8JknPiocgGR2Ag7D1ZqN.jpg",
+};
 
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
